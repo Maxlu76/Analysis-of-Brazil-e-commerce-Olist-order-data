@@ -177,44 +177,10 @@ select top 100 * from[dbo].[olist_products];
 select top 100 * from[dbo].[olist_sellers];
 select top 100 * from [dbo].[product_category_name];
 
---2. Business Objective:
-/*	
-	2.1 Analyze the overall operating status of Olist through 4 dimensions of users, merchants, products, and sales
-	2.2 Identify problem, cause analysis and present suggestion.
-	2.3 Identify abnormal metrics, analyze the cause. 
-	2.4 Provide directionl, goals and suggestions.
-*/
 
---3.3 Analytical architacture
-/* 3.1 User: 
-	 3.1.1 behavior:
-		A. payment
-		B. install payment
-		c. order number
-		d. payment time
-	 3.1.2 RFM segmentation:
-	 3.1.3 Regional distribution 
-
-	3.2 Merchants: 
-	 3.2.1 reginal distribution
-	 3.2.2 transaction volume
-	 3.2.3 avg score
-	 3.2.4 delivery time
-   
-   3.3 Products
-    3.3.1 SKU
-	3.3.2 Products contribution rate 
-	3.3.3 sales amount
-	3.3.4 sales volume
-   3.4 Sales
-    3.4.1 total sales amount
-	3.4.2 total sales volume
-	3.4.3 avg transaction value(ATV)
-	3.4.4 regional: volume & amount
-	3.4.5 time period: year, month, season volume &amount
 
 */
---2. data cleanup
+--2. data cleaning
 
 	--2.1 check null and replace
 select * from olist_customer
